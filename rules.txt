@@ -1,0 +1,59 @@
+!!!! Live2D !!!!
+||*/live2d*.js$script
+||*/live2d/*$script
+||*live2d*.min.js$script
+||*/live2d-widget*$script
+||*/l2d*$script
+||*/model/*/*.model*.json$xmlhttprequest
+
+!!!! Halo Tracker !!!!
+||*/halo-tracker.js$script
+
+!!!! 内容农场 !!!!
+! http://hdymly.com/
+||hdymly.com^
+! https://baijiahao.baidu.com/
+||baijiahao.baidu.com^
+! http://www.jmcixiang.com/
+||jmcixiang.com^
+! https://www.kmw.com/
+||kmw.com^
+! https://play.undcine.com
+||play.undcine.com^
+! https://m.yunqishi.net
+||yunqishi.net^
+
+! 2025年9月9日 https://lovol.icu
+lovol.icu##.bg-white.w-full.wrapper.dropdown-menu
+
+! 2025年9月16日 https://who.cx
+||who.cx/static/img/ad.jpg$image
+who.cx###ad
+
+! www.punycoder.com
+www.punycoder.com##.glueo-composition-external-services
+
+! 2025年11月11日 https://zhale.me
+zhale.me##div.sponsor-card:nth-of-type(1)
+zhale.me##.header
+zhale.me##div.sponsor-card:nth-of-type(4)
+zhale.me##div.sponsor-card:nth-of-type(6)
+zhale.me##div.sponsor-card:nth-of-type(8)
+
+! 2025年12月18日 https://cloud.tencent.com
+cloud.tencent.com###__feedback_bubble__
+
+! 2026年1月13日 https://wj.qq.com
+wj.qq.com##.survey-lint-promote-wrapper
+
+! https://gist.github.com/Xuanwo/79e20e7b785781236817a26516806e4e
+github.com##div.CopilotChatInputPartial-module__inputContainer--EE6LJ
+github.com##nav > ul > li:nth-of-type(4) > a
+
+! news.ycombinator.com
+news.ycombinator.com##tr.athing:has-text(/\bAI\b/i)
+news.ycombinator.com##tr.athing:has-text(/\bAI\b/i) + tr
+news.ycombinator.com##tr.athing:has-text(/\bAI\b/i) + tr + tr.spacer
+
+! 2026年3月4日 https://dm.console.aliyun.com
+dm.console.aliyun.com###sendify-banner-root
