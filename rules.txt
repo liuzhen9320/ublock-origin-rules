@@ -6,6 +6,17 @@
 ! License: https://github.com/liuzhen9320/ublock-origin-rules/blob/master/LICENSE
 !
 
+!!!! 通用 !!!!
+##.bottomSponsor
+##.topSponsor
+###content-ad
+##.ad-content
+##.ad-note
+##.adsbygoogle
+##.banner-ads
+##.content-ad
+.com/ads/$image,object,subdocument
+
 !!!! Live2D !!!!
 ||*/live2d*.js$script
 ||*/live2d/*$script
