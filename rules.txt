@@ -124,3 +124,7 @@ $removeparam=cvid,domain=chinadaily.com.cn|eastday.com|msn.cn|msn.com|tianqi.com
 ! 2026年3月25日 https://proton.me/l/bf-pass-offers-2025
 ||proton.me^$removeparam=url_id
 ||proton.me^$removeparam=phfp
+
+! 2026年3月25日 Chatra
+||call.chatra.io/chatra.js$script
+||chat.chatra.io^
