@@ -61,6 +61,28 @@
 ||bilibili.com^$removeparam=spm_id_from
 ||bilibili.com^$removeparam=spmid
 
+!!!! ——— 微信公众号 ——— !!!!
+! https://github.com/ClearURLs/Rules/issues/13
+||mp.weixin.qq.com^$removeparam=ckhsm
+||mp.weixin.qq.com^$removeparam=scene
+@@||mp.weixin.qq.com/mp/qrcode?$removeparam=scene
+||mp.weixin.qq.com^$removeparam=xtrack
+||mp.weixin.qq.com^$removeparam=key
+||mp.weixin.qq.com^$removeparam=ascene
+||mp.weixin.qq.com^$removeparam=uin
+||mp.weixin.qq.com^$removeparam=devicetype
+||mp.weixin.qq.com^$removeparam=version
+||mp.weixin.qq.com^$removeparam=exportkey
+||mp.weixin.qq.com^$removeparam=pass_ticket
+||mp.weixin.qq.com^$removeparam=abtest_cookie
+||mp.weixin.qq.com^$removeparam=chksm
+||mp.weixin.qq.com^$removeparam=count
+||mp.weixin.qq.com^$removeparam=enterid
+||mp.weixin.qq.com^$removeparam=from_msgid
+||mp.weixin.qq.com^$removeparam=from_itemidx
+||mp.weixin.qq.com^$removeparam=sessionid
+||mp.weixin.qq.com^$removeparam=subscene
+
 ! 2025年9月9日 https://lovol.icu
 lovol.icu##.bg-white.w-full.wrapper.dropdown-menu
 
@@ -95,3 +117,10 @@ news.ycombinator.com##tr.athing:has-text(/\bAI\b/i) + tr + tr.spacer
 
 ! 2026年3月4日 https://dm.console.aliyun.com
 dm.console.aliyun.com###sendify-banner-root
+
+! 2026年3月24日 从 Windows widget 打开的链接
+$removeparam=cvid,domain=chinadaily.com.cn|eastday.com|msn.cn|msn.com|tianqi.com|yiyouliao.com
+
+! 2026年3月25日 https://proton.me/l/bf-pass-offers-2025
+||proton.me^$removeparam=url_id
+||proton.me^$removeparam=phfp
