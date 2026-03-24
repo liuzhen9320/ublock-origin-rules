@@ -1,12 +1,14 @@
 ![Adblock Plus 2.0]
 ! Title: liuzhen932 自用过滤器
 ! Description: 全自用, 屏蔽各种令人反感的内容
-! Expires: 7 days (update frequency)
+! Expires: 3 days
 ! Homepage: https://github.com/liuzhen9320/ublock-origin-rules
 ! License: https://github.com/liuzhen9320/ublock-origin-rules/blob/master/LICENSE
 !
+! Compatible with rule 2 of https://xkcd.com/2235/
+!
 
-!!!! 通用 !!!!
+!!!! ——— 通用 ——— !!!!
 ##.bottomSponsor
 ##.topSponsor
 ###content-ad
@@ -16,8 +18,10 @@
 ##.banner-ads
 ##.content-ad
 .com/ads/$image,object,subdocument
+! See also: https://github.com/the1812/Bilibili-Evolved/issues/2247
+/auto-append-spmid.js
 
-!!!! Live2D !!!!
+!!!! ——— Live2D ——— !!!!
 ||*/live2d*.js$script
 ||*/live2d/*$script
 ||*live2d*.min.js$script
@@ -25,10 +29,10 @@
 ||*/l2d*$script
 ||*/model/*/*.model*.json$xmlhttprequest
 
-!!!! Halo Tracker !!!!
+!!!! ——— Halo Tracker ——— !!!!
 ||*/halo-tracker.js$script
 
-!!!! 内容农场 !!!!
+!!!! ——— 内容农场 ——— !!!!
 ! http://hdymly.com/
 ||hdymly.com^
 ! https://baijiahao.baidu.com/
@@ -41,6 +45,21 @@
 ||play.undcine.com^
 ! https://m.yunqishi.net
 ||yunqishi.net^
+
+!!!! ——— Bilibili ——— !!!!
+! https://github.com/the1812/Bilibili-Evolved/commit/e859b988c5a28ebd1acdedd2df037f23ab27637d
+! https://github.com/AdguardTeam/AdguardFilters/issues/106834
+||bilibili.com/video/*$removeparam=ts
+||bilibili.com^$removeparam=refer_from
+! B 站通用
+||b23.tv^$removeparam=/^share_.*$/
+||b23.tv^$removeparam=ts
+||bilibili.com^$removeparam=vd_source
+||bilibili.com/video/*$removeparam=buvid
+||bilibili.com/video/*$removeparam=mid
+||bilibili.com^$removeparam=plat_id
+||bilibili.com^$removeparam=spm_id_from
+||bilibili.com^$removeparam=spmid
 
 ! 2025年9月9日 https://lovol.icu
 lovol.icu##.bg-white.w-full.wrapper.dropdown-menu
