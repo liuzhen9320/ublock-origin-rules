@@ -28,6 +28,7 @@
 ||*/live2d-widget*$script
 ||*/l2d*$script
 ||*/model/*/*.model*.json$xmlhttprequest
+||*/sakana-widget*$script
 
 !!!! ——— Halo Tracker ——— !!!!
 ||*/halo-tracker.js$script
