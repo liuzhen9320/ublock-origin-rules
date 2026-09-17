@@ -1,7 +1,7 @@
 ![Adblock Plus 2.0]
 ! Title: liuzhen932 自用过滤器
-! Description: 全自用, 屏蔽各种令人反感的内容
-! Expires: 3 days
+! Description: 屏蔽各种令人反感的内容
+! Expires: 7 days
 ! Homepage: https://github.com/liuzhen9320/ublock-origin-rules
 ! License: https://github.com/liuzhen9320/ublock-origin-rules/blob/master/LICENSE
 !
@@ -21,6 +21,13 @@
 ! See also: https://github.com/the1812/Bilibili-Evolved/issues/2247
 /auto-append-spmid.js
 
+!!!! ——— FQDN & URL 屏蔽 ——— !!!!
+https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js
+https://a.tool.lu/te.js
+||umm.932.moe/main.js$important
+||umm.932.moe/recorder.js$script
+||*/halo-tracker.js$script
+
 !!!! ——— Live2D ——— !!!!
 ||*/live2d*.js$script
 ||*/live2d/*$script
@@ -29,9 +36,6 @@
 ||*/l2d*$script
 ||*/model/*/*.model*.json$xmlhttprequest
 ||*/sakana-widget*$script
-
-!!!! ——— Halo Tracker ——— !!!!
-||*/halo-tracker.js$script
 
 !!!! ——— 内容农场 ——— !!!!
 ! http://hdymly.com/
@@ -50,6 +54,7 @@
 !!!! ——— Bilibili ——— !!!!
 ! https://github.com/the1812/Bilibili-Evolved/commit/e859b988c5a28ebd1acdedd2df037f23ab27637d
 ! https://github.com/AdguardTeam/AdguardFilters/issues/106834
+www.bilibili.com##.adblock-tips
 ||bilibili.com/video/*$removeparam=ts
 ||bilibili.com^$removeparam=refer_from
 ! B 站通用
@@ -62,7 +67,8 @@
 ||bilibili.com^$removeparam=spm_id_from
 ||bilibili.com^$removeparam=spmid
 
-!!!! ——— 微信公众号 ——— !!!!
+!!!! ——— 腾讯系列 ——— !!!!
+! 微信公众号
 ! https://github.com/ClearURLs/Rules/issues/13
 ||mp.weixin.qq.com^$removeparam=ckhsm
 ||mp.weixin.qq.com^$removeparam=scene
@@ -83,29 +89,42 @@
 ||mp.weixin.qq.com^$removeparam=from_itemidx
 ||mp.weixin.qq.com^$removeparam=sessionid
 ||mp.weixin.qq.com^$removeparam=subscene
+! 腾讯云
+cloud.tencent.com###__feedback_bubble__
+cloud.tencent.com##.pc.pls-floatbar-inner
+! 腾讯问卷
+wj.qq.com##.survey-lint-promote-wrapper
 
-! 2025年9月9日 https://lovol.icu
-lovol.icu##.bg-white.w-full.wrapper.dropdown-menu
+!!!! ——— 其他内容 ——— !!!!
 
-! 2025年9月16日 https://who.cx
+! who.cx
 ||who.cx/static/img/ad.jpg$image
 who.cx###ad
 
-! www.punycoder.com
-www.punycoder.com##.glueo-composition-external-services
-
-! 2025年11月11日 https://zhale.me
+! zhale.me
 zhale.me##div.sponsor-card:nth-of-type(1)
 zhale.me##.header
 zhale.me##div.sponsor-card:nth-of-type(4)
 zhale.me##div.sponsor-card:nth-of-type(6)
 zhale.me##div.sponsor-card:nth-of-type(8)
 
-! 2025年12月18日 https://cloud.tencent.com
-cloud.tencent.com###__feedback_bubble__
+! IPLark
+||iplark.com/static/b0ac3443e76e.jpg$image
+iplark.com##.show.promo-rail
 
-! 2026年1月13日 https://wj.qq.com
-wj.qq.com##.survey-lint-promote-wrapper
+! TcpTest
+www.tcptest.cn##th.bg-gray-50.border-gray-300.border.whitespace-nowrap.font-medium.text-xs.text-center.py-2.px-2:nth-of-type(11)
+www.tcptest.cn##td.border-gray-300.border.text-xs.py-2.px-2:nth-of-type(11)
+www.tcptest.cn##.border-gray-200.border-b.bg-white
+
+! ITDOG
+www.itdog.cn##div.col-12:nth-of-type(4)
+www.itdog.cn##.top-recruit-notice-wrap
+www.itdog.cn##.pcoded-header.navbar
+
+! IDC 监控
+www.idcjk.com##.px-3.py-3.card-body
+www.idcjk.com##.ad-card-inline
 
 ! https://gist.github.com/Xuanwo/79e20e7b785781236817a26516806e4e
 github.com##div.CopilotChatInputPartial-module__inputContainer--EE6LJ
@@ -116,16 +135,45 @@ news.ycombinator.com##tr.athing:has-text(/\bAI\b/i)
 news.ycombinator.com##tr.athing:has-text(/\bAI\b/i) + tr
 news.ycombinator.com##tr.athing:has-text(/\bAI\b/i) + tr + tr.spacer
 
-! 2026年3月4日 https://dm.console.aliyun.com
-dm.console.aliyun.com###sendify-banner-root
-
-! 2026年3月24日 从 Windows widget 打开的链接
+! 从 Windows widget 打开的链接
 $removeparam=cvid,domain=chinadaily.com.cn|eastday.com|msn.cn|msn.com|tianqi.com|yiyouliao.com
 
-! 2026年3月25日 https://proton.me/l/bf-pass-offers-2025
+! https://proton.me/l/bf-pass-offers-2025
 ||proton.me^$removeparam=url_id
 ||proton.me^$removeparam=phfp
 
-! 2026年3月25日 Chatra
+! Chatra
 ||call.chatra.io/chatra.js$script
 ||chat.chatra.io^
+
+! 阿里云邮件推送控制台
+dm.console.aliyun.com###sendify-banner-root
+
+! 企查查
+www.qcc.com##.company-banner
+
+! https://distribution.github.io
+distribution.github.io##.gdoc-header
+
+! Bloomberg
+www.bloomberg.com##.gridLayout_leftContent__rFf_1
+www.bloomberg.com##.footer.media-ui-Footer_dark-zNOaDG22onM-.media-ui-Footer_footerContainer-48Eos3T24SA-
+www.bloomberg.com##.EM37iWv_83CXjXyTo0Ph.lQavdEW1XUimtPgYTqC1.e0fvyukrpqtAOhcmlcfC.gOd8vE9XP37ZNrhcEO8o
+www.bloomberg.com##.nav.media-ui-Nav_navContainer-hjs68ExRvE4-
+
+! https://www.minecraftzw.com
+www.minecraftzw.com##.background-cover
+www.minecraftzw.com##.wrapper-outer
+
+! 火山引擎控制台
+console.volcengine.com##.arco-alert-warning.arco-alert
+
+! YouTube
+www.youtube.com###content > .ytd-rich-section-renderer.style-scope
+
+! KanCloud
+||www.kancloud.cn/asset/app/images/thinkchat-banner.jpg$image
+
+! Twitch
+www.twitch.tv###twilight-sticky-footer-root
+
