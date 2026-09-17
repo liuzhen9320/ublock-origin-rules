@@ -95,13 +95,33 @@ cloud.tencent.com##.pc.pls-floatbar-inner
 ! 腾讯问卷
 wj.qq.com##.survey-lint-promote-wrapper
 
-!!!! ——— Chat Widget ——— !!!!
+!!!! ——— AI Chat Widget ——— !!!!
+/CxRobotSdkJs.js
 /creame-whatsapp-me/public/js/joinchat.min.js
 /wp-content/plugins/click-to-chat-for-whatsapp/*
 ://webim.*/button.js
 ://webim.*/button.php
-||ai.casbin.com^$domain=casbin.org
-! Third-party chat
+! Third-party
+||alhena.ai^$third-party
+||api.coinmarketcap.com/chatbot/
+||askmiso.com^$third-party
+||asus-brand-assistant.asus.com/brand-assistant.js
+||azurefd.net/cdns/copilot_v3.min.js$script,domain=nus.edu.sg
+||cdn.gist.ai^$third-party
+||cdn.whoop.com/v0/chat/chat.js$domain=support.whoop.com
+||chat.cdn-plain.com^
+||chat.g4media.org^
+||embed.chatnode.ai^
+||gotolstoy.com^$third-party
+||mfgpt.milanofinanza.it/widget/widget.js
+||mydrivers.com//V2/pc/AISummaryHandler.ashx?
+||sdk.whtvr.ai^$third-party
+||srv.divee.ai^$third-party
+||urbandictionary.ai^
+||widget.brambles.ai^$third-party
+||widget.indexfox.ai^
+||widget.kapa.ai^$third-party
+||widget.prod.equally.ai^$third-party
 ||247-inc.net^$third-party
 ||24nettbutikk.chat^$third-party
 ||3cx.com/livechat/
